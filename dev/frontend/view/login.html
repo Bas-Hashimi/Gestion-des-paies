@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Gestion des paies</title>
+</head>
+<body>
+
+<h1 class="titre-principal">Gestion des paies</h1>
+   <!-- LOGIN -->
+<div id="login-page">
+  <div class="login-box">
+    <div class="login-logo">
+      <h1>HMI<span>Salerie</span></h1>
+      <p>Système de Gestion des Paies</p>
+    </div>
+    <div id="login-error" class="alert alert-error" style="display:none"></div>
+    <div class="form-group">
+      <label>Nom d'utilisateur</label>
+      <input type="text" id="login-user" placeholder="ex: admin" />
+    </div>
+    <div class="form-group">
+      <label>Mot de passe</label>
+      <input type="password" id="login-pass" placeholder="••••••••" />
+    </div>
+    <button class="btn" onclick="doLogin()">Se connecter</button>
+    <p class="login-hint">admin/Milad1234 · emp1/pass123 · app1/pass123</p>
+  </div>
+</div>
+
+
+<script src="../scrtipt/index.js"></script>
+</body>
+</html>
