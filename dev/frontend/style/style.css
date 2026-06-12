@@ -17,7 +17,6 @@
     font-family: 'Segoe UI', sans-serif; 
     background: var(--bg); 
     color: var(--text); 
-    min-height: 100vh;
     }
 
 .titre-principal{
@@ -85,7 +84,7 @@
 /*premier colone de la page d'acceuille*/
 .colone-un{
     width: 250px;
-    height: 650px;
+    height: 850px;
     background-color:white;
     margin-left: 20px;
     border-radius: 4px;
@@ -110,7 +109,7 @@ a{
 /*deuxieme colone de la page d'acceuille*/
 .colone-deux{
     width: 100%;
-    height: 650px;
+    height: 850px;
     background-color: rgb(235, 232, 232);
     margin-left: 20px;
     border-radius: 4px;
@@ -130,6 +129,28 @@ h2{
     
 
 }
+
+
+/*liste des employers sur dashbord*/
+/* Barre de défilement pour la liste des employés sur le dashboard */
+.dashboard-container-scroll {
+    max-height: 500px; 
+    overflow-y: auto;     /* Active le scroll vertical si ça dépasse */
+    border: 1px solid #ddd;
+    padding-right: 1px;   /* Espace pour que le scroll ne colle pas au texte */
+    margin-top: 50px;
+}
+
+/* Optionnel : Rendre la barre de défilement plus moderne et fine */
+.dashboard-container-scroll::-webkit-scrollbar {
+    width: 6px;
+}
+
+.dashboard-container-scroll::-webkit-scrollbar-thumb {
+    background: #38dbe0;
+    border-radius: 4px;
+}
+
 /*h2 getion des employes*/
 .colone-deux h2{
     width: 20%;
@@ -139,6 +160,26 @@ h2{
     display: flex;
     flex-wrap: wrap;
 }
+
+/* Rend le titre de la liste fixe au scroll */
+.dashboard-container-scroll h4 {
+    position: sticky;
+    top: 0;
+    background-color: #f4f6f9; 
+    margin: 0;
+    padding: 10px 0;
+    z-index: 10; 
+}
+
+/* Rend l'entête du tableau (NOM, TYPE, SALAIRE) également fixe juste en dessous du titre */
+.dashboard-container-scroll .header-table {
+    position: sticky;
+    top: 38px; 
+    background-color: #e9ecef; 
+    z-index: 9;
+    padding: 8px;
+}
+/*type employer*/
 
 .card{
     margin:auto;
@@ -213,7 +254,7 @@ h2{
 
 /*liste des employes*/
 .liste-employes{
-    margin-top: 50px;
+    margin-top: 150px;
     color: var(--primary);
     background-color: white;
     border-radius: 8px;

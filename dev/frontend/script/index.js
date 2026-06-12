@@ -3,6 +3,7 @@ function doLogin() {
     const passField = document.getElementById('login-pass').value.trim();
     const errorDiv = document.getElementById('login-error');
 
+
     errorDiv.style.display = 'none';
 
     if (userField === '' || passField === '') {
@@ -34,7 +35,7 @@ function doLogin() {
             sessionStorage.setItem('show_welcome', 'true');
 
             // Redirige vers dashboard.html (qui est aussi dans le dossier 'pages')
-            window.location.href = 'dashboard.html';
+            window.location.href = 'dashboard.php';
         } else {
             errorDiv.innerText = data.message;
             errorDiv.style.display = 'block';
