@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,28 +9,31 @@
 <body>
 
 <h1 class="titre-principal">Gestion des paies</h1>
-   <!-- LOGIN -->
+
 <div id="login-page">
   <div class="login-box">
     <div class="login-logo">
       <h1>HMI<span>Salerie</span></h1>
       <p>Système de Gestion des Paies</p>
     </div>
-    <div id="login-error" class="alert alert-error" style="display:none"></div>
+    
+    <div id="login-error" class="alert alert-error" style="display:none; color: red; margin-bottom: 10px;"></div>
+    
     <div class="form-group">
-      <label>Nom d'utilisateur</label>
-      <input type="text" id="login-user" placeholder="ex: admin" />
+      <label>Nom d'utilisateur (Nom de famille)</label>
+      <input type="text" id="login-user" placeholder="ex: Hashimi" required />
     </div>
     <div class="form-group">
       <label>Mot de passe</label>
-      <input type="password" id="login-pass" placeholder="••••••••" />
+      <input type="password" id="login-pass" placeholder="••••••••" required />
     </div>
     <button class="btn" onclick="doLogin()">Se connecter</button>
-    <p class="login-hint">admin/Milad1234 · emp1/pass123 · app1/pass123</p>
+    <a href="logout.php" style="color: #d32f2f; text-decoration: none; font-weight: bold; margin-left: 10px;">Se déconnecter</a>
+    
+    <p class="login-hint">Exemples : Hashimi / hash1234 ou Dupont / pass123</p>
   </div>
 </div>
 
-
-<script src="../scrtipt/index.js"></script>
+<script src="../script/index.js"></script>
 </body>
 </html>

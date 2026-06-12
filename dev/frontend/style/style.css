@@ -56,6 +56,25 @@
 
 }
 
+/*btn se déconnecté*/
+.dashboard-container{
+    display: flex;
+    width: 300px;
+}
+
+.btn{
+    margin-left: auto;
+    padding: 10px 20px;
+    background-color: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    height: 40px;
+    float: right;
+
+}
 /*Container de la page d'acceuille*/
 .container{
     display: flex;
