@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Gestion des paies - Tableau de bord</title>
 </head>
 <body>
@@ -43,7 +43,6 @@
                     <p id="nombre-apprentis">Apprentis</p>
                 </div>
             </div>
-            <!-- NOUVEAU : LISTE DES EMPLOYÉS ACTIFS DIRECTEMENT SUR LE DASHBOARD -->
             <div class="liste-employes dashboard-container-scroll">
                 <h4>📋 Liste des employés actifs</h4>
                 
@@ -81,6 +80,6 @@
         </div>
     </div>
 
-    <script src="../script/index.js"></script>
+    <script src="/GESTION-DES-PAIES/frontend/script/index.js"></script>
 </body>
 </html>
